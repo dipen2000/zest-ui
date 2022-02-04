@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    /* border : 3px solid red;  */
+    width : 70%;
+    max-width : 110rem;
+    margin : auto;
+}
+
+nav{
+    /* border : 3px solid green; */
+    display : flex;
+    flex-direction: row;
+    align-items : center;
+    gap : 2rem;
+    padding : 1rem;
+}
+
+.lib-name a{
+    text-decoration: none;
+    color : black;
+    font-family:'Shrikhand', cursive;
+    font-size : 3.5rem;
+    
+}
+
+.nav-list ul{
+    list-style : none;
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    gap : 2rem;
+    /* border : 3px solid red; */
+}
+
+.nav-list ul li{
+    font-size: 2rem;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.social-icon{
+    display : flex;
+    flex-direction: row;
+    /* border : 3px solid red; */
+    gap : 1rem;
+    margin-left : auto;
+}
+
+.social-icon .icon{
+    cursor : pointer;
+} 
