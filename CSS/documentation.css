@@ -1,0 +1,128 @@
+/********************** importing fonts ************************/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+/********************* importing CSS ***************************/
+@import "./reset.css";
+@import "./colors.css";
+@import "./fonts.css";
+
+/* .mega-parent-flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height : 100%;
+    border : 5px solid yellow;
+    height : 100%;
+} */
+
+.container{
+    /* border : 3px solid red;  */
+    width : 70%;
+    max-width : 110rem;
+    margin : auto;
+    position : relative;
+    /* border : 3px solid red; */
+}
+
+/* body{
+    border : 5px solid green;
+    height : 100vh;
+} */
+
+nav{
+    /* border : 3px solid green; */
+    display : flex;
+    flex-direction: row;
+    align-items : center;
+    gap : 2rem;
+    padding : 1rem; 
+}
+
+.lib-name a{
+    font-family: var(--library-logo-font);
+    font-size : 3.5rem;
+    /* color : rebeccapurple; */
+}
+
+.nav-list ul{
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    gap : 2rem;
+    /* border : 3px solid red; */
+}
+
+.nav-list ul li{
+    font-size: 2rem;
+    font-family: var(--nav-list-items-font);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.social-icon{
+    display : flex;
+    flex-direction: row;
+    /* border : 3px solid red; */
+    gap : 1rem;
+}
+
+.m-left-auto{
+    margin-left : auto;
+}
+
+.social-icon .icon{
+    cursor : pointer;
+} 
+
+/* footer{
+    display: none;
+} */
+
+/* .footer-container{
+    display: flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    width : 100%;
+    gap : 1.5rem;
+    background-color : var(--test-color);
+    padding : 0.8rem;
+} */
+
+.connect{
+    font-family: var(--homepage-heading-font);
+    font-weight: normal;
+    font-size : 2rem;
+    color : var(--background-color);
+}
+
+/* .footer-social-icon-container{
+    display : flex;
+    flex-direction: row;
+    gap : 1rem;
+} */
+
+/* .footer-icons{
+    color : var(--background-color);
+} */
+
+@media screen and (max-width : 700px){
+    .social-icon{
+        display : none;
+    }
+    .container{
+        width : 100%;
+    }
+    /* footer{
+        display : block;
+    } */
+    .main-section{
+        margin-top : 5rem;
+    }
+    .btn-main{
+        font-size: 1.6rem;
+    }
+}
