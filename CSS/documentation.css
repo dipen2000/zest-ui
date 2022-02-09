@@ -63,6 +63,10 @@ main{
     grid-template-rows: 1fr;
 }
 
+.active-list-item{
+    color : var(--test-color);
+}
+
 .aside-left{
     border : 3px solid purple;
     grid-area : sidebarLeft;
