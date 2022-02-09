@@ -161,13 +161,16 @@ main{
     padding : 8px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color :  rgba(102, 51, 153, 0.356);
+    background-color :  var(--light-test-color);
 }
 
 .code-snippet{
     border-radius : 15px;
 }
 
+.code-text{
+    background-color :var(--light-test-color);
+}
 
 
 
