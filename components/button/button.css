@@ -1,0 +1,104 @@
+.btn{
+    border: none;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border-radius : 5px;
+    font-size: 1.6rem;
+}
+
+.btn-error-solid{
+    background-color : var(--status-dnd);
+    color : var(--background-color);
+}
+
+.btn-error-solid:hover{
+    background-color : var(--danger-hover);
+}
+
+.btn-primary-solid{
+    background-color : var(--primary-color);
+    color : var(--background-color);
+}
+
+.btn-primary-solid:hover{
+    background-color : var(--primary-hover);
+}
+
+.btn-secondary-solid{
+    background-color : var(--secondary-color);
+}
+
+.btn-secondary-solid:hover{
+    background-color : var(--secondary-hover);
+}
+
+.btn-success-solid{
+    background-color : var(--success-alert-color);
+    color : var(--background-color);
+}
+
+.btn-success-solid:hover{
+    background-color : var(--success-hover);
+}
+
+.btn-error-outline{
+    color : var(--status-dnd);
+    border : 2px solid var(--status-dnd);
+}
+
+.btn-error-outline:hover{
+    background-color: var(--status-dnd);
+    color : var(--background-color);
+}
+
+.btn-primary-outline{
+    color : var(--primary-color);
+    border : 2px solid var(--primary-color);
+}
+
+.btn-primary-outline:hover{
+    background-color : var(--primary-color);
+    color : var(--background-color);
+}
+
+.btn-secondary-outline{
+    border : 2px solid var(--secondary-color);
+}
+
+.btn-secondary-outline:hover{
+    color :  var(--background-color);
+    background-color : gray;
+}
+
+.btn-success-outline{
+    color : var(--success-alert-color);
+    border : 2px solid var(--success-alert-color);
+}
+
+.btn-success-outline:hover{
+    background-color : var(--success-alert-color);
+    color :  var(--background-color);
+}
+
+.btn-rounded{
+    border-radius: 30px;
+}
+
+.btn-floating{
+    height : 5rem;
+    width : 5rem;
+    padding : 10px;
+    border : 3px solid var(--background-color);
+    border-radius: 100%;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color : var(--background-color);
+    cursor : pointer;
+    /* position: fixed; */
+}
+
+.btn-floating:hover{
+    background-color : var(--primary-hover);
+}
