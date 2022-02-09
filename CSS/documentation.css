@@ -8,29 +8,14 @@
 @import "./colors.css";
 @import "./fonts.css";
 
-/* .mega-parent-flex-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    height : 100%;
-    border : 5px solid yellow;
-    height : 100%;
-} */
-
 .container{
     /* border : 3px solid red;  */
-    width : 70%;
-    max-width : 110rem;
+    width : 85%;
+    max-width : 130rem;
     margin : auto;
     position : relative;
     /* border : 3px solid red; */
 }
-
-/* body{
-    border : 5px solid green;
-    height : 100vh;
-} */
 
 nav{
     /* border : 3px solid green; */
@@ -39,6 +24,8 @@ nav{
     align-items : center;
     gap : 2rem;
     padding : 1rem; 
+    position : sticky;
+    top : 0;
 }
 
 .lib-name a{
@@ -62,6 +49,94 @@ nav{
     cursor: pointer;
 }
 
+/********************** content section of the page  ******************/
+
+main{
+    margin-top : 30px;
+    border : 3px solid red;
+}
+.content-section-container{
+    border : 3px solid red;
+    display : grid;
+    grid-template-areas: "sidebarLeft main-content sidebarRight";
+    grid-template-columns: 20rem minmax(0,1fr) 20rem;
+    grid-template-rows: 1fr;
+}
+
+.active-list-item{
+    color : var(--test-color);
+}
+
+.aside-left{
+    border : 3px solid purple;
+    grid-area : sidebarLeft;
+}
+
+.content-main-section{
+    border : 3px solid green;
+    grid-area: main-content;
+}
+
+.aside-right{
+    border : 3px solid yellow;
+    grid-area : sidebarRight;
+}
+
+/* .moving-container{
+    position : fixed;
+} */
+
+.txt-align-center{
+    text-align: center;
+}
+
+.aside-list-container{
+    padding : 5px;
+    margin-bottom : 10px;
+}
+
+.aside-list-container h3{
+    font-size : 2.1rem;
+    font-family: var(--nav-list-items-font);
+    border-bottom : 2px solid black;
+    padding : 0.8rem;
+    margin-bottom : 0.8rem;
+}
+
+.aside-list{
+    font-size: 1.8rem;
+    font-family: var(--nav-list-items-font);
+    margin : 10px 0;
+    font-weight : 600;
+    padding : 0 0.8rem;
+}
+
+.aside-list:hover{
+    color : var(--test-color);
+}
+
+.aside-right-list .aside-list{
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .social-icon{
     display : flex;
     flex-direction: row;
@@ -77,6 +152,55 @@ nav{
     cursor : pointer;
 } 
 
+.connect{
+    font-family: var(--homepage-heading-font);
+    font-weight: normal;
+    font-size : 2rem;
+    color : var(--background-color);
+}
+
+
+
+
+/********************** media queries *******************************/
+@media screen and (max-width : 600px){
+    .social-icon{
+        display : none;
+    }
+    .lib-name a{
+        font-size: 3rem;
+    }
+    .nav-list ul li{
+        font-size : 1.8rem;
+    }
+}
+
+@media screen and (max-width : 700px){
+    .container{
+        width : 100%;
+    }
+    /* footer{
+        display : block;
+    } */
+    .main-section{
+        margin-top : 5rem;
+    }
+    .btn-main{
+        font-size: 1.6rem;
+    }
+}
+
+/* .footer-social-icon-container{
+    display : flex;
+    flex-direction: row;
+    gap : 1rem;
+} */
+
+/* .footer-icons{
+    color : var(--background-color);
+} */
+
+
 /* footer{
     display: none;
 } */
@@ -91,38 +215,3 @@ nav{
     background-color : var(--test-color);
     padding : 0.8rem;
 } */
-
-.connect{
-    font-family: var(--homepage-heading-font);
-    font-weight: normal;
-    font-size : 2rem;
-    color : var(--background-color);
-}
-
-/* .footer-social-icon-container{
-    display : flex;
-    flex-direction: row;
-    gap : 1rem;
-} */
-
-/* .footer-icons{
-    color : var(--background-color);
-} */
-
-@media screen and (max-width : 700px){
-    .social-icon{
-        display : none;
-    }
-    .container{
-        width : 100%;
-    }
-    /* footer{
-        display : block;
-    } */
-    .main-section{
-        margin-top : 5rem;
-    }
-    .btn-main{
-        font-size: 1.6rem;
-    }
-}
