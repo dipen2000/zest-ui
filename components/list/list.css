@@ -1,0 +1,49 @@
+.list{
+    list-style: initial;
+    font-family: var(--nav-list-items-font);
+}
+
+.list-style-square .list{
+    list-style: square;
+}
+
+.list-style-hollow .list{
+    list-style: circle;
+}
+
+.ordered-list-decimal .list{
+    list-style : decimal;
+}
+
+.ordered-list-roman .list{
+    list-style : upper-roman;
+}
+
+.ordered-list-alpha .list{
+    list-style: upper-alpha;
+}
+
+.list-container{
+    background-color : var(--background-color);
+}
+
+.list-inline{
+    display : flex;
+}
+
+.list-style-none .list{
+    list-style: none;
+}
+
+.list-inline-item{
+    padding : 0.8rem;
+}
+
+.list-stack{
+    display : flex;
+    flex-direction: column;
+    padding : 10px;
+}
+
+
+

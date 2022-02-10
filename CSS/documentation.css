@@ -219,6 +219,13 @@ main{
     /* max-width : 30rem; */
 }
 
+.list-component-display{
+    display : flex;
+    flex-direction: row;
+    gap : 5rem;
+    /* border : 3px solid red; */
+}
+
 
 
 
