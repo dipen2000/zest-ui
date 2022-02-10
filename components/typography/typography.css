@@ -1,0 +1,92 @@
+.heading-1{
+    font-size : 3rem;
+    font-weight : 700;
+    font-family: var(--component-heading-font);
+}
+
+.heading-2{
+    font-size : 2.5rem;
+    font-weight : 700;
+    font-family: var(--component-heading-font);
+}
+
+.heading-3{
+    font-size : 2rem;
+    font-weight : 700;
+    font-family: var(--component-heading-font);
+}
+
+.heading-4{
+    font-size : 1.5rem;
+    font-weight : 700;
+    font-family: var(--component-heading-font);
+}
+
+.heading-5{
+    font-size : 1.25rem;
+    font-weight : 700;
+    font-family: var(--component-heading-font);
+}
+
+.heading-6{
+    font-size : 0.875rem;
+    font-weight : 700;
+    font-family: var(--component-heading-font);
+}
+
+.txt-lg{ 
+    font-size : 2rem !important;
+    font-weight: normal;
+    font-family: var(--nav-list-items-font);
+    /* border : 3px solid red; */
+}
+
+.txt-md{
+    font-size : 1.75rem !important;
+    font-weight: normal;
+    font-family: var(--nav-list-items-font);
+}
+
+.txt-sm{
+    font-size : 1rem !important;
+    font-weight: normal;
+    font-family: var(--nav-list-items-font);   
+}
+
+.txt-bold{
+    font-weight : bold;
+}
+
+.txt-light{
+    font-weight : light;
+}
+
+.txt-strike{
+    text-decoration: line-through;
+}
+
+.txt-grey{
+    color : var(--stone-500);
+}
+
+.txt-highlight{
+    background-color : var(--stone-500);
+    padding : 0.2rem 0.5rem;
+    color : var(--background-color);
+}
+
+.txt-italic{
+    font-style: italic;
+}
+
+.txt-primary{
+    color : var(--primary-color);
+}
+
+.txt-primary-dark{
+    color : var(--primary-hover);
+}
+
+.txt-underline{
+    text-decoration : underline;
+}
