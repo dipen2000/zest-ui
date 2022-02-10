@@ -21,4 +21,7 @@
     --secondary-hover : #E5E7EB;
     --stone-500 : #78716c;
     --dark-gray : #242323;
+    --rating-icon-color : #ffb400;
+    --rating-icon-hover :  #ffd675;
+    --rating-star-icon-dull : rgba(0, 0, 0, 0.26);
 }

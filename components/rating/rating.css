@@ -1,0 +1,26 @@
+.rating-star-icon{
+    color: var(--rating-star-icon-dull);
+}
+
+.rating-star-input:enabled .rating-star-icon{
+    cursor: pointer;
+}
+
+.rating-star-input:enabled + .rating-star-icon:hover{
+    color:var(--rating-icon-hover);
+}
+
+.rating-star-input{
+    width: 0;
+    margin: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.rating-star-input:checked + .rating-star-icon{
+    color: var(--rating-icon-color);
+}
+
+.rating-star-container{
+    font-size : 3rem;
+}
