@@ -107,8 +107,14 @@ main{
     grid-area : sidebarRight;
 }
 
+.aside-left-height{
+    height : 580px;
+}
+
 .moving-container{
     position : fixed;
+    overflow-y : auto;
+    /* border : 3px solid red; */
 }
 
 .txt-align-center{
@@ -175,7 +181,6 @@ main{
 .code-text{
     background-color :var(--light-test-color);
 }
-
 
 
 

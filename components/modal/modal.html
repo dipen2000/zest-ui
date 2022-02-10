@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../prism/prism.css">
     <link rel="stylesheet" href="../../CSS/documentation.css">
-    <link rel="stylesheet" href="../avatar/avatar.css">
-    <link rel="stylesheet" href="./badge.css">
+    <link rel="stylesheet" href="../button/button.css">
+    <link rel="stylesheet" href="../typography/typography.css">
+    <link rel="stylesheet" href="./modal.css">
     <script src="../../prism/prism.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/fd5cc9ac67.js" crossorigin="anonymous" defer></script> -->
-    <title>Badges | ZestUI</title>
+    <title>Modal | ZestUI</title>
 </head>
 <body>
     <!-- <div class="mega-parent-flex-container"> -->
@@ -58,8 +58,8 @@
                             <div class="aside-list-container txt-align-center">
                                 <ul>
                                     <h3>Components</h3>
-                                    <li class="aside-list"><a href="../avatar/avatar.html">Avatar</a></li>
-                                    <li class="aside-list active-list-item"><a href="./badge.html">Badge</a></li>
+                                    <li class="aside-list"><a href="./avatar.html">Avatar</a></li>
+                                    <li class="aside-list"><a href="../badges/badge.html">Badge</a></li>
                                     <li class="aside-list"><a href="../alert/alert.html">Alert</a></li>
                                     <li class="aside-list"><a href="../button/button.html">Button</a></li>
                                     <li class="aside-list"><a href="../card/card.html">Card</a></li>
@@ -68,86 +68,74 @@
                                     <li class="aside-list"><a href="../typography/typography.html">Typography</a></li>
                                     <li class="aside-list"><a href="../list/list.html">List</a></li>
                                     <li class="aside-list"><a href="../navigation/navigation.html">Navigation</a></li>
-                                    <li class="aside-list"><a href="../modal/modal.html">Modal</a></li>
+                                    <li class="aside-list active-list-item"><a href="./modal.html">Modal</a></li>
                                 </ul>
                             </div>
                         </div>
                     </aside>
                     <div class="content-main-section">
-                        <h1>Badge</h1>
-                        <p class="mb-2">Badge can be used to show either status of the user (online, or offline) or you can use it show notification count.</p>
+                        <h1>Modal</h1>
+                        <p class="mb-2">Modal can be used for creating dialog boxes, to communicate with user.</p>
                         <div class="divider mb-2"></div>
-                        <h2 class="mb-2"  id="badge-on-avatar">Badge on avatars</h2>
-                        <p class="mb-2">We have three types of badges to display user's status. Use <code class="code-text">online</code> for status Online just like use <code class="code-text">offline</code> , <code class="code-text">dnd</code> for offline and dnd respectively.</p>
+                        <h2 class="mb-2" id="modal">Modal</h2>
                         <section class="component-scetion mb-2">
                             <div class="component-display">
-
-                                <!-- Badge Component code -->
-                                <div class="avatar av-sm">
-                                    <img src="../../assets/imgs/batman-profile.jpg" alt="demo avatar">
-                                    <div class="badge online right bottom"></div>
-                                </div>
-                                <div class="avatar av-sm">
-                                    <img src="../../assets/imgs/spidey-pic.jpg" alt="demo avatar">
-                                    <div class="badge offline right bottom"></div>
-                                </div>
-                                <div class="avatar av-sm">
-                                    <img src="../../assets/imgs/deadpool-pic.jpg" alt="demo avatar">
-                                    <div class="badge dnd right bottom"></div>
+                                <div class="modal">
+                                    <div class="modal-head">Modal Head</div>
+                      
+                                    <p class="modal-body txt-md">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                      nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                      
+                                    <div class="modal-foot">
+                                    <button
+                                        class="btn btn-primary-solid"
+                                      >
+                                        Save
+                                      </button>
+                                      <button class="btn btn-primary-outline">
+                                        Close
+                                      </button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="component-code-section">
                                 <script type="text/plain" class="language-markup code-snippet">
-                                    <div class="avatar  av-sm">
-                                        <img src=".." alt="..">
-                                        <div class="badge online right bottom"></div>
-                                    </div>
-                                    <div class="avatar av-sm">
-                                        <img src=".." alt="..">
-                                        <div class="badge offline right bottom"></div>
-                                    </div>
-                                    <div class="avatar av-sm">
-                                        <img src=".." alt="..">
-                                        <div class="badge dnd right bottom"></div>
-                                    </div>
-                                </script>
-                            </div>
-                        </section>
-                        <div class="divider mb-2"></div>
-                        <h2 class="mb-2"  id="badge-on-icons">Badge on icons</h2>
-                        <p class="mb-2">Here we have different classes secified for the alignment of the badge on the icon like <code class="code-text">top</code> , <code class="code-text">right</code> , <code class="code-text">bottom</code> and <code class="code-text">left</code> and for the numbered badge we have the class <code class="code-text">number-badge</code>.</p>
-                        <section class="component-scetion mb-2">
-                            <div class="component-display">
-                                <div class="icon av-sm">
-                                    <svg xmlns="http>://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2z" fill="currentColor"></path></svg>
-                                    <div class="badge right top number-badge dnd">5</div>
-                                </div>
-                                <div class="icon av-sm">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6m-2 0l-8 5l-8-5h16m0 12H4V8l8 5l8-5v10z" fill="currentColor"></path></svg>
-                                    <div class="badge right top number-badge dnd">9</div>
-                                </div>
-                            </div>
-                            <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                    <div class="icon av-sm">
-                                        <svg file>
-                                            <div class="badge right top number-badge dnd">5</div>
-                                    </div>
-                                    <div class="icon av-sm">
-                                        <svg file>
-                                            <div class="badge right top number-badge dnd">9</div>
+                                    <div class="modal">
+                                        <div class="modal-head">Modal Head</div>
+                          
+                                        <p class="modal-body txt-md">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                          nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                          
+                                        <div class="modal-foot">
+                                        <button
+                                            class="btn btn-primary-solid"
+                                          >
+                                            Save
+                                          </button>
+                                          <button class="btn btn-primary-outline">
+                                            Close
+                                          </button>
+                                        </div>
                                     </div>
                                 </script>
                             </div>
                         </section>
+                        
                     </div>
                     <aside class="aside-right">
                         <div class="moving-container">
                         <div class="aside-list-container aside-right-list">
                             <ul>
                                 <h3>On this page</h3>
-                                <li class="aside-list"><a href="#badge-on-avatar">Badge on avatar</a></li>
-                                <li class="aside-list"><a href="#badge-on-icons">Badge on icons</a></li>
+                                <li class="aside-list"><a href="#modal">Modal</a></li>
                             </ul>
                         </div>
                         </div>
