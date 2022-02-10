@@ -231,6 +231,19 @@ main{
     /* border : 3px solid red; */
 }
 
+.just-for-grid-display{
+    height : 20rem;
+    font-size : 2rem;
+    padding : 1rem;
+    border : 3px solid var(--dark-gray);
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    font-family: var(--component-heading-font);
+
+}
 
 
 

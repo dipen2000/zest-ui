@@ -1,0 +1,19 @@
+.grid{
+    display : grid;
+}
+
+.grid-ratio-50-50{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-ratio-30-70{
+    grid-template-columns : 1fr 2fr;
+}
+
+.grid-ratio-70-30{
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid-three-item{
+    grid-template-columns : repeat(3 , 1fr);
+}
