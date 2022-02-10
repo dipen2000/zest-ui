@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../prism/prism.css">
     <link rel="stylesheet" href="../../CSS/documentation.css">
-    <link rel="stylesheet" href="./typography.css">
+    <link rel="stylesheet" href="../typography/typography.css">
+    <link rel="stylesheet" href="./snackbar.css">
+    <script src="https://kit.fontawesome.com/fd5cc9ac67.js" crossorigin="anonymous" defer></script>
     <script src="../../prism/prism.js"></script>
-    <title>Typography | ZestUI</title>
+    <title>Snackbar | ZestUI</title>
 </head>
 <body>
     <!-- <div class="mega-parent-flex-container"> -->
@@ -63,129 +65,80 @@
                                     <li class="aside-list"><a href="../card/card.html">Card</a></li>
                                     <li class="aside-list"><a href="../image/image.html">Image</a></li>
                                     <li class="aside-list"><a href="../input/input.html">Input</a></li>
-                                    <li class="aside-list active-list-item"><a href="./typography.html">Typography</a></li>
+                                    <li class="aside-list"><a href="../typography/typography.html">Typography</a></li>
                                     <li class="aside-list"><a href="../list/list.html">List</a></li>
+                                    <li class="aside-list"><a href="../navigation/navigation.html">Navigation</a></li>
                                     <li class="aside-list"><a href="../modal/modal.html">Modal</a></li>
                                     <li class="aside-list"><a href="../rating/rating.html">Rating</a></li>
-                                    <li class="aside-list"><a href="../snackbar/snackbar.html">Snackbar</a></li>
-                                    
+                                    <li class="aside-list active-list-item"><a href="./snackbar.html">Snackbar</a></li>
                                 </ul>
                             </div>
                         </div>
                     </aside>
                     <div class="content-main-section">
-                        <h1>Typography</h1>
-                        <p class="mb-2">Use Typography to format text content on your web site.</p>
+                        <h1>Snackbar</h1>
+                        <p class="mb-2">This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action</p>
                         <div class="divider mb-2"></div>
-                        <h2 class="mb-2" id="headings">Headings</h2>
-                        <p class="mb-2">Use the following classes on your headings according to the heading size you need.
-                            <code class="code-text">heading-1</code>
-                            <code class="code-text">heading-2</code>
-                            <code class="code-text">heading-3</code>
-                            <code class="code-text">heading-4</code>
-                            <code class="code-text">heading-5</code>
-                            <code class="code-text">heading-6</code>.
-                        </p>
+                        <h2 class="mb-2" id="simple-snackbar">Simple snackbar</h2>
                         <section class="component-scetion mb-2">
                             <div class="component-display">
-                                <div class="component-display-white-background">
-                                    <h1 class="heading-1">Heading 1</h1>
-                                    <h2 class="heading-2">Heading 2</h2>
-                                    <h3 class="heading-3">Heading 3</h3>
-                                    <h4 class="heading-4">Heading 4</h4>
-                                    <h5 class="heading-5">Heading 5</h5>
-                                    <h6 class="heading-6">Heading 6</h6>
+                                <div class="snackbar">
+                                    <p class="txt-md">Can't send photo. Retry in 5 seconds.</p>
+                                    <button class="btn snackbar-btn">Retry</button>
+                                    <div class="dismiss">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--radix-icons" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5l3.469-3.468z" fill="currentColor"></path></g></svg>
+                                    </div>
                                 </div>
                             </div>
                             <div class="component-code-section">
                                 <script type="text/plain" class="language-markup code-snippet">
-                                    <h1 class="heading-1">Heading 1</h1>
-                                    <h2 class="heading-2">Heading 2</h2>
-                                    <h3 class="heading-3">Heading 3</h3>
-                                    <h4 class="heading-4">Heading 4</h4>
-                                    <h5 class="heading-5">Heading 5</h5>
-                                    <h6 class="heading-6">Heading 6</h6>
-                                </script>
-                            </div>
-                        </section>
-
-                        <div class="divider mb-2"></div>
-                        <h2 class="mb-2" id="text-size">Text size</h2>
-                        <p class="mb-2">Use the following classes on your paragraph texts according to the size you need.
-                            <code class="code-text">txt-lg</code>
-                            <code class="code-text">txt-md</code>
-                            <code class="code-text">txt-sm</code>.
-                        </p>
-                        <section class="component-scetion mb-2">
-                            <div class="component-display">
-                                <div class="component-display-white-background">
-                                  <p class="txt-lg">Random text</p>  
-                                  <p class="txt-md">Random text</p>  
-                                  <p class="txt-sm">Random text</p>  
-                                </div>
-                            </div>
-                            <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                  <p class="txt-lg">Random text</p>  
-                                  <p class="txt-md">Random text</p>  
-                                  <p class="txt-sm">Random text</p>
-                                </script>
-                            </div>
-                        </section>
-
-                        <div class="divider mb-2"></div>
-                        <h2 class="mb-2" id="text-style">Text style</h2>
-                        <p class="mb-2">You can add the classes to text styles for your project needs. Add classes.
-                            <code class="code-text">txt-bold</code>
-                            <code class="code-text">txt-light</code>
-                            <code class="code-text">txt-strike</code>
-                            <code class="code-text">txt-grey</code>
-                            <code class="code-text">txt-highlight</code>
-                            <code class="code-text">txt-italic</code>
-                            <code class="code-text">txt-primary</code>
-                            <code class="code-text">txt-primary-dark</code>
-                            <code class="code-text">txt-underline</code>
-                            .
-                        </p>
-                        <section class="component-scetion mb-2">
-                            <div class="component-display">
-                                <div class="component-display-white-background">
-                                  <p class="txt-md txt-bold">This is random text.</p>
-                                  <p class="txt-md txt-light">This is random text.</p>
-                                  <p class="txt-md txt-strike">This is random text.</p>
-                                  <p class="txt-md txt-grey">This is random text.</p>
-                                  <p class="txt-md txt-highlight">This is random text.</p>
-                                  <p class="txt-md txt-italic">This is random text.</p>
-                                  <p class="txt-md txt-primary">This is random text.</p>
-                                  <p class="txt-md txt-primary-dark">This is random text.</p>
-                                  <p class="txt-md txt-underline">This is random text.</p>
-
-                                </div>
-                            </div>
-                            <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                    <p class="txt-md txt-bold">This is random text.</p>
-                                    <p class="txt-md txt-light">This is random text.</p>
-                                    <p class="txt-md txt-strike">This is random text.</p>
-                                    <p class="txt-md txt-grey">This is random text.</p>
-                                    <p class="txt-md txt-highlight">This is random text.</p>
-                                    <p class="txt-md txt-italic">This is random text.</p>
-                                    <p class="txt-md txt-primary">This is random text.</p>
-                                    <p class="txt-md txt-primary-dark">This is random text.</p>
-                                    <p class="txt-md txt-underline">This is random text.</p>
+                                    <div class="snackbar">
+                                        <p class="txt-md">Can't send photo. Retry in 5 seconds.</p>
+                                        <button class="snackbar-btn">Retry</button>
+                                        <div class="dismiss">
+                                            <svg file for dismiss></svg>
+                                        </div>
+                                    </div>
                                 </script>
                             </div>
                         </section>
                         
+                        <div class="divider mb-2"></div>
+                        <h2 class="mb-2" id="simple-snackbar-variant">Simple snackbar variant</h2>
+                        <section class="component-scetion mb-2">
+                            <div class="component-display">
+                                <div class="snackbar stacked">
+                                    <p class="txt-md">This item already has the label "travel". You can add a new label.</p>
+                                    <div class="snackbar-reactions">
+                                        <button class="btn snackbar-btn">Retry</button>
+                                        <div class="dismiss">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--radix-icons" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5l3.469-3.468z" fill="currentColor"></path></g></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component-code-section">
+                                <script type="text/plain" class="language-markup code-snippet">
+                                    <div class="snackbar stacked">
+                                        <p class="txt-md">This item already has the label "travel". You can add a new label.</p>
+                                        <div class="snackbar-reactions">
+                                            <button class="btn snackbar-btn">Retry</button>
+                                            <div class="dismiss">
+                                                <svg file for dismiss></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </script>
+                            </div>
+                        </section>
                     </div>
                     <aside class="aside-right">
                         <div class="moving-container">
                         <div class="aside-list-container aside-right-list">
                             <ul>
                                 <h3>On this page</h3>
-                                <li class="aside-list"><a href="#headings">Headings</a></li>
-                                <li class="aside-list"><a href="#text-size">Text size</a></li>
-                                <li class="aside-list"><a href="#text-style">Text styles</a></li>
+                                <li class="aside-list"><a href="#simple-snackbar">Simple snackbar</a></li>
+                                <li class="aside-list"><a href="#simple-snackbar-variant">Simple snackbar variant</a></li>
                             </ul>
                         </div>
                         </div>
