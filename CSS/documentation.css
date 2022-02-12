@@ -245,6 +245,10 @@ main{
 
 }
 
+.position-relative{
+    position : relative;
+}
+
 
 
 /********************** media queries *******************************/

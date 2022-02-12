@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../prism/prism.css">
     <link rel="stylesheet" href="../../CSS/documentation.css">
-    <link rel="stylesheet" href="./image.css">
+    <link rel="stylesheet" href="../typography/typography.css">
+    <link rel="stylesheet" href="./slider.css">
+    <script src="./slider.js" defer></script>
     <script src="../../prism/prism.js" defer></script>
-    <title>Image | ZestUI</title>
+    <title>Grid | ZestUI</title>
 </head>
 <body>
     <!-- <div class="mega-parent-flex-container"> -->
@@ -56,12 +58,12 @@
                             <div class="aside-list-container txt-align-center">
                                 <ul>
                                     <h3>Components</h3>
-                                    <li class="aside-list"><a href="../avatar/avatar.html">Avatar</a></li>
+                                    <li class="aside-list"><a href="./avatar.html">Avatar</a></li>
                                     <li class="aside-list"><a href="../badges/badge.html">Badge</a></li>
                                     <li class="aside-list"><a href="../alert/alert.html">Alert</a></li>
                                     <li class="aside-list"><a href="../button/button.html">Button</a></li>
                                     <li class="aside-list"><a href="../card/card.html">Card</a></li>
-                                    <li class="aside-list active-list-item"><a href="./image.html">Image</a></li>
+                                    <li class="aside-list"><a href="../image/image.html">Image</a></li>
                                     <li class="aside-list"><a href="../input/input.html">Input</a></li>
                                     <li class="aside-list"><a href="../typography/typography.html">Typography</a></li>
                                     <li class="aside-list"><a href="../list/list.html">List</a></li>
@@ -69,61 +71,53 @@
                                     <li class="aside-list"><a href="../modal/modal.html">Modal</a></li>
                                     <li class="aside-list"><a href="../rating/rating.html">Rating</a></li>
                                     <li class="aside-list"><a href="../snackbar/snackbar.html">Snackbar</a></li>
-                                    <li class="aside-list"><a href="../Grid/grid.html">Grid</a></li>
-                                    <li class="aside-list"><a href="../slider/slider.html">Slider</a></li>
+                                    <li class="aside-list"><a href="./grid.html">Grid</a></li>
+                                    <li class="aside-list active-list-item"><a href="./slider.html">Slider</a></li>
                                 </ul>
                             </div>
                         </div>
                     </aside>
                     <div class="content-main-section">
-                        <h1>Image</h1>
-                        <p class="mb-2">Image can be used to display large picture on the website.</p>
+                        <h1>Slider</h1>
+                        <p class="mb-2">Sliders are used to decide range for something like sound in videos, price in shopping sites, etc.</p>
                         <div class="divider mb-2"></div>
-                        <h2 class="mb-2" id="round-images">Round images</h2>
-                        <p class="mb-2">These are circular images. We can make image circular using <code class="code-text">img-round</code>.</p>
+                        <h2 class="mb-2" id="slider">Slider</h2>
                         <section class="component-scetion mb-2">
                             <div class="component-display">
-                                <img src="../../assets/imgs/batman-img.jpg" class="img img-round">
-                                <img src="../../assets/imgs/batman-profile.jpg" class="img img-round">
-                            </div>
-                            <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                    <img src=".." class="img img-round">
-                                    <img src=".." class="img img-round">
-                                </script>
-                            </div>
-                        </section>
-
-                        <div class="divider mb-2"></div>
-                        <h2 class="mb-2" id="square-images">Square images</h2>
-                        <p class="mb-2">These are square images with curved edges. We can make image square using <code class="code-text">img-square</code>.</p>
-                        <section class="component-scetion mb-2">
-                            <div class="component-display">
-                                <img src="../../assets/imgs/batman-img.jpg" class="img img-square">
-                                <img src="../../assets/imgs/batman-profile.jpg" class="img img-square">
-                            </div>
-                            <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                    <img src=".." class="img img-square">
-                                    <img src=".." class="img img-square">
-                                </script>
-                            </div>
-                        </section>
-
-                        <div class="divider mb-2"></div>
-                        <h2 class="mb-2" id="responsive-images">Responsive images</h2>
-                        <p class="mb-2">To make an image responsive use this class <code class="code-text">img-responsive</code>.</p>
-                        <section class="component-scetion mb-2">
-                            <div class="component-display">
-                                <div class="img-container">
-                                    <img src="../../assets/imgs/batman-profile.jpg" class="img-responsive" alt="batman image">
+                                <div class="slider-container">
+                                    <div class="slider-rate">50</div>
+                                    <div class="position-relative">
+                                        <input class="slider" type="range" min="0" max="100" value="50">
+                                        <div class="selector"></div>
+                                        <div class="progress"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                    <div class="img-container">
-                                        <img src=".." class="img-responsive" alt="..">
-                                    </div>
+                                <div class="mb-2">
+                                    <script type="text/plain" class="language-markup code-snippet">
+                                        <div class="slider-container">
+                                            <div class="slider-rate">50</div>
+                                            <div class="position-relative">
+                                                <input class="slider" type="range" min="0" max="100" value="50">
+                                                <div class="selector"></div>
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+                                    </script>
+                                </div>
+                                <h2 class="mb-2 heading-2">JS code</h2>
+                                <script type="text/plain" class="language-javascript code-snippet">
+                                    const sliderRate = document.querySelector(".slider-rate");
+                                    const slider = document.querySelector(".slider");
+                                    const progress = document.querySelector(".progress");
+                                    const selector = document.querySelector(".selector")
+
+                                    slider.oninput = function (){
+                                        sliderRate.innerText = (this.value);
+                                        selector.style.left = this.value + "%";
+                                        progress.style.width = this.value + "%";
+                                    }
                                 </script>
                             </div>
                         </section>
@@ -134,9 +128,7 @@
                         <div class="aside-list-container aside-right-list">
                             <ul>
                                 <h3>On this page</h3>
-                                <li class="aside-list"><a href="#round-images">Round images</a></li>
-                                <li class="aside-list"><a href="#square-images">Square images</a></li>
-                                <li class="aside-list"><a href="#responsive-images">Responsive images</a></li>
+                                <li class="aside-list"><a href="#slider">Slider</a></li>
                             </ul>
                         </div>
                         </div>
