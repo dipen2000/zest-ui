@@ -4,6 +4,10 @@
     font-family: var(--component-heading-font);
 }
 
+.slider-container{
+    width : 30rem;
+}
+
 .slider{
     -webkit-appearance: none;
     width : 30rem;
