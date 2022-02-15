@@ -249,7 +249,49 @@ main{
     position : relative;
 }
 
+.my-style{
+    background-color: var(--rating-icon-color);
+    color : black;
+}
 
+.my-style:hover{
+    background-color: var(--rating-icon-hover);
+}
+
+.color-container{
+    width : 13rem;
+    height : 13rem;
+    /* border : 3px solid red; */
+    border-radius: 0.8rem;
+    position : relative;
+    padding : 0.8rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.warning-solid{
+    background-color: var(--warning-alert-color);   
+}
+
+.primary-solid{
+    background-color : var(--primary-color);
+    color : var(--background-color);
+}
+
+.secondary-solid{
+    background-color : var(--secondary-color);
+}
+
+.error-solid{
+    background-color : var(--status-dnd);
+    color : var(--background-color);
+}
+
+.success-solid{
+    background-color : var(--success-alert-color);
+    color : var(--background-color);
+}
 
 /********************** media queries *******************************/
 @media screen and (max-width : 600px){
