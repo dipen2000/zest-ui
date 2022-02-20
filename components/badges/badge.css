@@ -1,0 +1,54 @@
+.badge{
+    position: absolute;
+    border-radius : 50%;
+    height : 1.5rem;
+    width : 1.5rem;
+    border : 2px solid var(--background-color);
+}
+
+.right{
+    right : 0;
+}
+
+.left{
+    left : 0;
+}
+
+.bottom{
+    bottom : 0;
+}
+
+.top{
+    top : -1rem;
+}
+
+.number-badge{
+    height : 2.5rem;
+    width : 2.5rem;
+    color : white;
+    display : flex;
+    align-items: center;
+    justify-content : center;
+    font-family: var(--nav-list-items-font);
+}
+
+.online{
+    background-color: var(--status-online);
+}
+
+.offline{
+    background-color :var(--status-offline);
+}
+
+.dnd{
+    background-color :var(--status-dnd);
+}
+
+.icon{
+    position: relative;
+}
+
+.icon svg{
+    height: 100%;
+    width : 100%;
+}
