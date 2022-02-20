@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../prism/prism.css">
     <link rel="stylesheet" href="../../CSS/documentation.css">
-    <!-- <link rel="stylesheet" href="../avatar/avatar.css"> -->
-    <link rel="stylesheet" href="./alert.css">
-    <!-- <link rel="stylesheet" href="./badge.css"> -->
+    <link rel="stylesheet" href="./image.css">
     <script src="../../prism/prism.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/fd5cc9ac67.js" crossorigin="anonymous" defer></script> -->
-    <title>Alerts | ZestUI</title>
+    <title>Image | ZestUI</title>
 </head>
 <body>
     <!-- <div class="mega-parent-flex-container"> -->
@@ -62,92 +59,77 @@
                                     <h3>Components</h3>
                                     <li class="aside-list"><a href="../avatar/avatar.html">Avatar</a></li>
                                     <li class="aside-list"><a href="../badges/badge.html">Badge</a></li>
-                                    <li class="aside-list active-list-item"><a href="./alert.html">Alert</a></li>
+                                    <li class="aside-list"><a href="../alert/alert.html">Alert</a></li>
                                     <li class="aside-list"><a href="../button/button.html">Button</a></li>
                                     <li class="aside-list"><a href="../card/card.html">Card</a></li>
-                                    <li class="aside-list"><a href="../image/image.html">Image</a></li>
+                                    <li class="aside-list active-list-item"><a href="./image.html">Image</a></li>
                                     <li class="aside-list"><a href="../input/input.html">Input</a></li>
                                 </ul>
                             </div>
                         </div>
                     </aside>
                     <div class="content-main-section">
-                        <h1>Alert</h1>
-                        <p class="mb-2">Alerts can be used to show a message to the user.</p>
+                        <h1>Image</h1>
+                        <p class="mb-2">Image can be used to display large picture on the website.</p>
                         <div class="divider mb-2"></div>
-                        <h2 class="mb-2"  id="danger-alert">Danger alert</h2>
-                        <p class="mb-2">Use the class <code class="code-text">alert-danger-solid</code> for showing the alert with full solid background and for just outline use <code class="code-text">alert-danger-outline</code>.</p>
+                        <h2 class="mb-2" id="round-images">Round images</h2>
+                        <p class="mb-2">These are circular images. We can make image circular using <code class="code-text">img-round</code>.</p>
                         <section class="component-scetion mb-2">
                             <div class="component-display">
-                                <div class="alert alert-danger-solid">Hey!👋 I am a danger alert</div>
-                                <div class="alert alert-danger-outline">Hey!👋 I am a danger alert</div>
+                                <img src="../../assets/imgs/batman-img.jpg" class="img img-round">
+                                <img src="../../assets/imgs/batman-profile.jpg" class="img img-round">
                             </div>
                             <div class="component-code-section">
                                 <script type="text/plain" class="language-markup code-snippet">
-                                    <div class="alert alert-danger-solid">Hey!👋 I am a danger alert</div>
-                                    <div class="alert alert-danger-outline">Hey!👋 I am a danger alert</div>
-                                </script>
-                            </div>
-                        </section>
-                        <div class="divider mb-2"></div>
-                        <h2 class="mb-2"  id="info-alert">Info alert</h2>
-                        <p class="mb-2">Use the class <code class="code-text">alert-info-solid</code> for showing the alert with full solid background and for just outline use <code class="code-text">alert-info-outline</code>.</p>
-                        <section class="component-scetion mb-2">
-                            <div class="component-display">
-                                <div class="alert alert-info-solid">Hey!👋 I am a info alert</div>
-                                <div class="alert alert-info-outline">Hey!👋 I am a info alert</div>
-                            </div>
-                            <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                    <div class="alert alert-info-solid">Hey!👋 I am a info alert</div>
-                                    <div class="alert alert-info-outline">Hey!👋 I am a info alert</div>
+                                    <img src=".." class="img img-round">
+                                    <img src=".." class="img img-round">
                                 </script>
                             </div>
                         </section>
 
                         <div class="divider mb-2"></div>
-                        <h2 class="mb-2"  id="success-alert">Success alert</h2>
-                        <p class="mb-2">Use the class <code class="code-text">alert-success-solid</code> for showing the alert with full solid background and for just outline use <code class="code-text">alert-success-outline</code>.</p>
+                        <h2 class="mb-2" id="square-images">Square images</h2>
+                        <p class="mb-2">These are square images with curved edges. We can make image square using <code class="code-text">img-square</code>.</p>
                         <section class="component-scetion mb-2">
-                            <div class="component-display ">
-                                <div class="alert alert-success-solid">Hey!👋 I am a Success alert</div>
-                                <div class="alert alert-success-outline">Hey!👋 I am a Success alert</div>
+                            <div class="component-display">
+                                <img src="../../assets/imgs/batman-img.jpg" class="img img-square">
+                                <img src="../../assets/imgs/batman-profile.jpg" class="img img-square">
                             </div>
                             <div class="component-code-section">
                                 <script type="text/plain" class="language-markup code-snippet">
-                                    <div class="alert alert-success-solid">Hey!👋 I am a Success alert</div>
-                                    <div class="alert alert-success-outline">Hey!👋 I am a Success alert</div>
+                                    <img src=".." class="img img-square">
+                                    <img src=".." class="img img-square">
                                 </script>
                             </div>
                         </section>
 
+                        <div class="divider mb-2"></div>
+                        <h2 class="mb-2" id="responsive-images">Responsive images</h2>
+                        <p class="mb-2">To make an image responsive use this class <code class="code-text">img-responsive</code>.</p>
+                        <section class="component-scetion mb-2">
+                            <div class="component-display">
+                                <div class="img-container">
+                                    <img src="../../assets/imgs/batman-profile.jpg" class="img-responsive" alt="batman image">
+                                </div>
+                            </div>
+                            <div class="component-code-section">
+                                <script type="text/plain" class="language-markup code-snippet">
+                                    <div class="img-container">
+                                        <img src=".." class="img-responsive" alt="..">
+                                    </div>
+                                </script>
+                            </div>
+                        </section>
                         
-                        <div class="divider mb-2"></div>
-                        <h2 class="mb-2"  id="warning-alert">Warning alert</h2>
-                        <p class="mb-2">Use the class <code class="code-text">alert-warning-solid</code> for showing the alert with full solid background and for just outline use <code class="code-text">alert-warning-outline</code>.</p>
-                        <section class="component-scetion mb-2">
-                            <div class="component-display ">
-                                <div class="alert alert-warning-solid">Hey!👋 I am a Warning alert</div>
-                                <div class="alert alert-warning-outline">Hey!👋 I am a Warning alert</div>
-                            </div>
-                            <div class="component-code-section">
-                                <script type="text/plain" class="language-markup code-snippet">
-                                    <div class="alert alert-warning-solid">Hey!👋 I am a Warning alert</div>
-                                    <div class="alert alert-warning-outline">Hey!👋 I am a Warning alert</div>
-                                </script>
-                            </div>
-                        </section>
-
                     </div>
                     <aside class="aside-right">
                         <div class="moving-container">
                         <div class="aside-list-container aside-right-list">
                             <ul>
                                 <h3>On this page</h3>
-                                <li class="aside-list"><a href="#danger-alert">Danger alert</a></li>
-                                <li class="aside-list"><a href="#info-alert">Info alert</a></li>
-                                <li class="aside-list"><a href="#success-alert">Success alert</a></li>
-                                <li class="aside-list"><a href="#warning-alert">Warning alert</a></li>
+                                <li class="aside-list"><a href="#round-images">Round images</a></li>
+                                <li class="aside-list"><a href="#square-images">Square images</a></li>
+                                <li class="aside-list"><a href="#responsive-images">Responsive images</a></li>
                             </ul>
                         </div>
                         </div>
