@@ -1,0 +1,164 @@
+.card{
+    /* border : 3px solid red; */
+    border-radius: 1rem;
+    position: relative;
+    width : 22rem;
+    background-color: var(--background-color);
+}
+
+.card-desc-product-info{
+    /* border : 3px solid red; */
+    padding : 1rem;
+}
+
+.card-desc-product-name{
+    padding-top : 0.5rem;
+    color : var(--stone-500);
+    /* font-weight: bold; */
+}
+
+.card-desc-price-container{
+    padding : 0 10px 10px 10px;
+}
+
+.card-reactions{
+    display: flex;
+    justify-content : flex-end;
+    align-items : center;
+    padding :10px;
+    /* border : 3px solid red; */
+}
+
+.card-desc-brand{
+    color : var(--dark-gray);
+    font-family: var(--component-heading-font);
+}
+
+.card-desc-price{
+    color : var(--dark-gray);
+    font-family: var(--component-heading-font);
+}
+
+.card-img{
+    height : 280px;
+    width : 100%;
+    position: relative;
+    /* border : 3px solid greenyellow; */
+}
+.product-img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.add-to-cart{
+    width : 25px;
+    height : 25px;
+    margin : 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.share{
+    width : 20px;
+    height : 20px;
+    margin : 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.wishlist{
+    position: absolute;
+    top : 10px;
+    right : 10px;
+    width : 25px;
+    height : 25px;
+    /* border: 3px solid red; */
+}
+
+.wishlist svg{
+    width : 100%;
+    height : 100%;
+    cursor: pointer;
+    
+}
+
+.wishlist svg:hover{
+    color : rgb(235, 48, 48);
+}
+
+.card-badge-container{
+    position: absolute;
+    top : 10px;
+    left : 0;
+    /* border : 3px solid red; */
+    background-color : rgb(88, 88, 230);
+    width : 30%;
+}
+
+.card-badge{
+    font-size: 1.6rem;
+    color : white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/************************* card with dismiss ************************/
+
+.card-dismiss{
+    display : flex;
+    flex-direction: column;
+    width : 30rem;
+    padding : 0.8rem;
+}
+
+.card-dismiss-btn{
+    border : 0;
+    outline : 0;
+    padding : 0.5rem;
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+/***************************** card with text overlay ***********************/
+.card-overlay{
+    width : 40rem;
+    height : 33rem;
+}
+
+.card-desc-overlay{
+    position : absolute;
+    top : 5rem;
+    left : 0;
+}
+
+/******************* text only card  *****************/
+
+.text-only-card{
+    width : 40rem;
+    padding : 0.8rem;
+}
+
+/********************************** horizontal card ********************/
+
+.horizontal-card-container{
+    width : 35rem;
+}
+
+.card-horizontal{
+    height : 15rem;
+    width : 15rem;
+    position: relative;
+}
+
+.horizontal-card-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/********************************** card with shadow  *****************************/
+
+.card-with-shadow{
+    box-shadow: 5px 5px 8px var(--dark-gray);
+}
