@@ -207,6 +207,18 @@ main{
     color : var(--background-color);
 }
 
+.component-display-white-background{
+    /* border : 3px solid red; */
+    text-align: center;
+    width : 60%;
+    max-width : 54.2rem;
+    padding : 1rem;
+    background-color : var(--background-color);
+    border-radius: 15px;
+    /* height : 40rem; */
+    /* max-width : 30rem; */
+}
+
 
 
 
