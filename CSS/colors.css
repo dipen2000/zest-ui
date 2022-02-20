@@ -1,9 +1,22 @@
 :root{
+    --primary-color : #6366F1;
+    --primary-hover : #4F46E5;
     --background-color : #fffafa;
     --dark-gray : #3d3c3c;
     --test-color : rebeccapurple;
     --light-test-color : rgba(102, 51, 153, 0.356);
     --status-online : #33ff00;
     --status-offline : #939792;
-    --status-dnd : #f73e3e;
+    --status-dnd : #F44336;
+    --danger-hover : #d31609;
+    --light-status-dnd : #f73e3e6b;
+    --info-alert-background : #a5f3fc;
+    --info-alert-color : #0891b2;
+    --success-alert-color : #4CAF50;
+    --success-hover : #0d8611;
+    --success-alert-background : #b8eeab;
+    --warning-alert-color : #FF9800;
+    --warning-alert-background : #fde68a;
+    --secondary-color : #F3F4F6;
+    --secondary-hover : #E5E7EB;
 }

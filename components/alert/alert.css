@@ -1,0 +1,53 @@
+.alert{
+    border-radius: 15px;
+    font-weight: bold;
+    margin : 1rem 0;
+    font-family: var(--component-heading-font);
+    /* max-width: 25rem; */
+    padding: 1rem;
+    /* border : 3px solid red; */
+}
+
+.alert-danger-solid{
+    color : var(--status-dnd);
+    background-color : var(--light-status-dnd);
+    border : 3px solid var(--light-status-dnd);
+}
+
+.alert-danger-outline{
+    color : var(--status-dnd);
+    border : 3px solid var(--status-dnd);
+}
+
+.alert-info-solid{
+    color : var(--info-alert-color);
+    background-color : var(--info-alert-background);
+    border : 3px solid var(--info-alert-background);
+}
+
+.alert-info-outline{
+    color : var(--info-alert-color);
+    border : 3px solid var(--info-alert-color);
+}
+
+.alert-success-solid{
+    color : var(--success-alert-color);
+    background-color : var(--success-alert-background);
+    border : 3px solid var(--success-alert-background);
+}
+
+.alert-success-outline{
+    color : var(--success-alert-color);
+    border : 3px solid var(--success-alert-color);
+}
+
+.alert-warning-solid{
+    color : var(--warning-alert-color);
+    background-color : var(--warning-alert-background);
+    border : 3px solid var(--warning-alert-background);
+}
+
+.alert-warning-outline{
+    color : var(--warning-alert-color);
+    border : 3px solid var(--warning-alert-color);
+}
