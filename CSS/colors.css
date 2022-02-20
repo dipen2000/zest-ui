@@ -21,4 +21,10 @@
     --secondary-hover : #E5E7EB;
     --stone-500 : #78716c;
     --dark-gray : #242323;
+    --rating-icon-color : #ffb400;
+    --rating-icon-hover :  #ffd675;
+    --rating-star-icon-dull : rgba(0, 0, 0, 0.26);
+    --snackbar-background-color : #333;
+    --snackbar-btn-color : cyan;
+    --snackbar-btn-color-hover : rgba(0, 255, 255, 0.13);
 }
