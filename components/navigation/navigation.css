@@ -1,0 +1,35 @@
+.navigation-bar{
+    width : 100rem;
+}
+
+.lib-name a{
+    font-family: var(--library-logo-font);
+    font-size : 3.5rem;
+    /* color : rebeccapurple; */
+}
+
+.nav-list ul{
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    gap : 2rem;
+    /* border : 3px solid red; */
+}
+
+.nav-list ul li{
+    font-size: 2rem;
+    font-family: var(--nav-list-items-font);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.social-icon{
+    display : flex;
+    flex-direction: row;
+    /* border : 3px solid red; */
+    gap : 1rem;
+}
+
+.social-icon .nav-icon{
+    cursor : pointer;
+}
