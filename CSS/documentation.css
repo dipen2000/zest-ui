@@ -15,7 +15,6 @@
     /* max-width : 130rem; */
     margin : auto;
     position : relative;
-    /* border : 3px solid red; */
 }
 
 nav{
@@ -108,7 +107,7 @@ main{
 }
 
 .aside-left-height{
-    height : 580px;
+    height : 58rem;
 }
 
 .moving-container{
@@ -122,8 +121,8 @@ main{
 }
 
 .aside-list-container{
-    padding : 5px;
-    margin-bottom : 10px;
+    padding : 0.5rem;
+    margin-bottom : 1rem;
 }
 
 .aside-list-container h3{
@@ -137,7 +136,7 @@ main{
 .aside-list{
     font-size: 1.8rem;
     font-family: var(--nav-list-items-font);
-    margin : 10px 0;
+    margin : 1rem 0;
     font-weight : 600;
     padding : 0 0.8rem;
 }
@@ -162,20 +161,20 @@ main{
     gap : 2rem;
     padding : 1.5rem;
     background-color : rgba(102, 51, 153, 0.356);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
 .component-code-section{
     /* border : 3px solid red; */
-    padding : 8px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding : 0.8rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     background-color :  var(--light-test-color);
 }
 
 .code-snippet{
-    border-radius : 15px;
+    border-radius : 1.5rem;
 }
 
 .code-text{
@@ -291,6 +290,16 @@ main{
 .success-solid{
     background-color : var(--success-alert-color);
     color : var(--background-color);
+}
+
+.only-code-section{
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.only-component-display{
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 
 /********************** media queries *******************************/

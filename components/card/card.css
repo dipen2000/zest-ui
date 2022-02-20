@@ -84,7 +84,7 @@
 }
 
 .wishlist svg:hover{
-    color : rgb(235, 48, 48);
+    color : var(--status-dnd);
 }
 
 .card-badge-container{
@@ -92,7 +92,7 @@
     top : 10px;
     left : 0;
     /* border : 3px solid red; */
-    background-color : rgb(88, 88, 230);
+    background-color : var(--card-badge-bg-color);
     width : 30%;
 }
 
