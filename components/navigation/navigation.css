@@ -5,7 +5,6 @@
 .lib-name a{
     font-family: var(--library-logo-font);
     font-size : 3.5rem;
-    /* color : rebeccapurple; */
 }
 
 .nav-list ul{
@@ -13,7 +12,6 @@
     flex-direction: row;
     align-items : center;
     gap : 2rem;
-    /* border : 3px solid red; */
 }
 
 .nav-list ul li{
@@ -26,7 +24,6 @@
 .social-icon{
     display : flex;
     flex-direction: row;
-    /* border : 3px solid red; */
     gap : 1rem;
 }
 

@@ -1,42 +1,7 @@
 @import "./colors.css";
 
-:root{
-    --primary-color : #6366F1;
-    --primary-hover : #4F46E5;
-    --background-color : #fffafa;
-    --dark-gray : #3d3c3c;
-    --test-color : #663399;
-    --light-test-color : rgba(102, 51, 153, 0.356);
-    --status-online : #33ff00;
-    --status-offline : #939792;
-    --status-dnd : #F44336;
-    --danger-hover : #d31609;
-    --light-status-dnd : #f73e3e6b;
-    --info-alert-background : #a5f3fc;
-    --info-alert-color : #0891b2;
-    --success-alert-color : #4CAF50;
-    --success-hover : #0d8611;
-    --success-alert-background : #b8eeab;
-    --warning-alert-color : #FF9800;
-    --warning-alert-background : #fde68a;
-    --secondary-color : #F3F4F6;
-    --secondary-hover : #E5E7EB;
-    --stone-500 : #78716c;
-    --dark-gray : #242323;
-    --rating-icon-color : #ffb400;
-    --rating-icon-hover :  #ffd675;
-    --rating-star-icon-dull : rgba(0, 0, 0, 0.26);
-    --snackbar-background-color : #333;
-    --snackbar-btn-color : cyan;
-    --snackbar-btn-color-hover : rgba(0, 255, 255, 0.13);
-    --card-badge-bg-color : #5858e6;
-    --color-heading1 : #fffafa;
-    
-}
-
 body{
     --background-color : #fffafa;
-    /* --primary-color :  #6366F1; */
     --bg-color-for-containers :  #fffafa;
     --home-page-desc-color : #242323;
     --test-color: #663399;
@@ -47,7 +12,6 @@ body{
 
 body.dark{
     --background-color :  #242323;
-    /* --primary-color :  #4F46E5; */
     --bg-color-for-containers : #663399;
     --border-color : #fffafa;
     --home-page-desc-color : #dfdfdf;

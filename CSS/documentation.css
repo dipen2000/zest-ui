@@ -10,15 +10,12 @@
 
 
 .container{
-    /* border : 3px solid red;  */
     width : 90%;
-    /* max-width : 130rem; */
     margin : auto;
     position : relative;
 }
 
 nav{
-    /* border : 3px solid green; */
     display : flex;
     flex-direction: row;
     align-items : center;
@@ -31,7 +28,6 @@ nav{
 .lib-name a{
     font-family: var(--library-logo-font);
     font-size : 3.5rem;
-    /* color : rebeccapurple; */
 }
 
 .nav-list ul{
@@ -39,7 +35,6 @@ nav{
     flex-direction: row;
     align-items : center;
     gap : 2rem;
-    /* border : 3px solid red; */
 }
 
 .nav-list ul li{
@@ -53,10 +48,8 @@ nav{
 
 main{
     margin-top : 3rem;
-    /* border : 3px solid red; */
 }
 .content-section-container{
-    /* border : 3px solid red; */
     display : grid;
     grid-template-areas: "sidebarLeft main-content sidebarRight";
     grid-template-columns: 20rem minmax(0,1fr) 20rem;
@@ -68,12 +61,10 @@ main{
 }
 
 .aside-left{
-    /* border : 3px solid purple; */
     grid-area : sidebarLeft;
 }
 
 .content-main-section{
-    /* border : 3px solid green; */
     margin : 0 2.5rem;
     grid-area: main-content;
 }
@@ -84,7 +75,6 @@ main{
 }
 
 .content-main-section h2{
-    /* font-size: 4rem; */
     font-family: var(--component-heading-font);
 }
 
@@ -102,7 +92,6 @@ main{
 }
 
 .aside-right{
-    /* border : 3px solid yellow; */
     grid-area : sidebarRight;
 }
 
@@ -113,7 +102,6 @@ main{
 .moving-container{
     position : fixed;
     overflow-y : auto;
-    /* border : 3px solid red; */
 }
 
 .txt-align-center{
@@ -152,7 +140,6 @@ main{
 /************************** avatar component documentation styles ********************/
 
 .component-display{
-    /* border : 3px solid red; */
     display : flex;
     flex-direction: row;
     align-items : center;
@@ -166,7 +153,6 @@ main{
 }
 
 .component-code-section{
-    /* border : 3px solid red; */
     padding : 0.8rem;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
@@ -181,18 +167,9 @@ main{
     background-color :var(--light-test-color);
 }
 
-
-
-
-
-
-
-
-
 .social-icon{
     display : flex;
     flex-direction: row;
-    /* border : 3px solid red; */
     align-items : center;
     gap : 1rem;
 }
@@ -213,22 +190,18 @@ main{
 }
 
 .component-display-white-background{
-    /* border : 3px solid red; */
     text-align: center;
     width : 60%;
     max-width : 54.2rem;
     padding : 1rem;
     background-color : var(--background-color);
     border-radius: 15px;
-    /* height : 40rem; */
-    /* max-width : 30rem; */
 }
 
 .list-component-display{
     display : flex;
     flex-direction: row;
     gap : 5rem;
-    /* border : 3px solid red; */
 }
 
 .just-for-grid-display{
@@ -242,7 +215,6 @@ main{
     justify-content: center;
     background-color: var(--background-color);
     font-family: var(--component-heading-font);
-
 }
 
 .position-relative{
@@ -261,7 +233,6 @@ main{
 .color-container{
     width : 13rem;
     height : 13rem;
-    /* border : 3px solid red; */
     border-radius: 0.8rem;
     position : relative;
     padding : 0.8rem;
@@ -345,9 +316,77 @@ main{
       font-size : 1.8rem;
   }
 
+.drawer-backdrop{
+      /* display : none; */
+      width : 100%;
+      position : fixed;
+      top : 0;
+      left :0;
+      height : 100vh;
+      background-color :rgba(0,0,0,0.2);
+      z-index: 1;
+}
+
+.drawer-backdrop-hide{
+      display : none;
+}
+
+.btnHambuger{
+    display : none;
+}
+ 
+
 /********************** media queries *******************************/
+
+@media only screen and (max-width : 800px){
+    .content-section-container{
+        grid-template-columns: 15rem minmax(0,1fr) 10rem;
+    }
+}
+
+@media only screen and (max-width : 700px){
+
+    .content-section-container{
+        grid-template-columns: 15rem minmax(0,1fr);
+    }
+
+    .aside-right{
+        display : none;
+    }
+
+    .container{
+        width : 100%;
+    }
+    .main-section{
+        margin-top : 5rem;
+    }
+    .btn-main{
+        font-size: 1.6rem;
+    }
+}
+
 @media screen and (max-width : 600px){
-    .social-icon{
+
+    .content-section-container{
+        grid-template-areas: "main-content";
+        grid-template-columns: 100%;
+    }
+
+    .btnHambuger{
+        display : inline-block;
+    }
+
+    .content-main-section{
+        grid-area: "main-content";
+        margin : 0 0.25rem;
+        padding : 2rem;
+    }
+
+    .container{
+        width : 100%;
+    }
+
+    .nav-icon{
         display : none;
     }
     .lib-name a{
@@ -356,20 +395,44 @@ main{
     .nav-list ul li{
         font-size : 1.8rem;
     }
+
+    .moving-container{
+        z-index : 2;
+        top : 0;
+        left : 0;
+        width : 50%;
+        height : 100vh;
+        background-color : white;
+        transform: translateX(-150%);
+        transition : all 0.2s ease-in-out;
+        color : black;
+    }
+
+    .aside-list-container h3{
+        border-bottom: 2px solid var(--dark-gray);
+    }
+
+    .moving-container-show{
+        transform: translateX(0);
+    } 
 }
 
-@media screen and (max-width : 700px){
-    .container{
-        width : 100%;
+@media only screen and (max-width : 450px){
+    .nav-icon{
+        display : none;
     }
-    /* footer{
-        display : block;
-    } */
-    .main-section{
-        margin-top : 5rem;
+    .lib-name a{
+        font-size: 3rem;
     }
-    .btn-main{
-        font-size: 1.6rem;
+    .nav-list ul li{
+        font-size : 1.8rem;
+    }
+    .aside-right{
+        display : none;
     }
 }
+
+
+
+
 

@@ -20,3 +20,18 @@ checkbox.addEventListener("change", (e) => {
     localStorage.setItem("theme" , "light");
   }
 })
+
+const btnHambuger = document.querySelector(".btnHambuger");
+const drawerBackdrop = document.querySelector(".drawer-backdrop");
+const movingContainer = document.querySelector(".moving-container");
+
+btnHambuger.addEventListener("click" , ()=>{
+  console.log("hit it!");
+  drawerBackdrop.classList.remove("drawer-backdrop-hide");
+  movingContainer.classList.add("moving-container-show");
+});
+
+drawerBackdrop.addEventListener("click" , ()=>{
+  drawerBackdrop.classList.add("drawer-backdrop-hide");
+  movingContainer.classList.remove("moving-container-show");
+})

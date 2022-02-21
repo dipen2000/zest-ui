@@ -1,12 +1,10 @@
 main{
-    /* border : 3px solid red;   */
     display : flex;
     align-items : center;
     justify-content : center;  
 }
 
 .main-section-home{
-    /* border : 3px solid red; */
     display : flex;
     flex-direction: column;
     margin-top : 15rem;
@@ -18,7 +16,6 @@ main{
     font-family: var(--homepage-heading-font);
     text-align: center;
     font-size : 5rem;
-    /* border : 3px solid red; */
 }
 
 .main-section-home h1 span{
@@ -27,14 +24,12 @@ main{
 
 .main-section-home p{
     text-align: center;
-    /* border : 3px solid red; */
     font-size : 2rem;
     font-family: var(--nav-list-items-font);
     color : var(--home-page-desc-color);
 }
 
 .btn-section-home{
-    /* border : 3px solid green; */
     display : flex;
     align-items : center;
     justify-content : center;
@@ -71,13 +66,6 @@ main{
     justify-content : center;
 }
 
-
-@media screen and (max-width : 600px){
-    .btn-section-home{
-        flex-direction: column;
-    }
-}
-
 @media screen and (max-width : 800px){
     .main-section-home h1{
         font-size: 3.5rem;
@@ -92,6 +80,14 @@ main{
         font-size : 1.6rem;
     }
 }
+
+@media screen and (max-width : 600px){
+    .btn-section-home{
+        flex-direction: column;
+    }
+}
+
+
 
 @media screen and (max-width : 400px){
     .main-section-home {
