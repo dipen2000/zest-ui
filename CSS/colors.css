@@ -3,7 +3,7 @@
     --primary-hover : #4F46E5;
     --background-color : #fffafa;
     --dark-gray : #3d3c3c;
-    --test-color : rebeccapurple;
+    --test-color : #663399;
     --light-test-color : rgba(102, 51, 153, 0.356);
     --status-online : #33ff00;
     --status-offline : #939792;
@@ -27,4 +27,9 @@
     --snackbar-background-color : #333;
     --snackbar-btn-color : cyan;
     --snackbar-btn-color-hover : rgba(0, 255, 255, 0.13);
+    --card-badge-bg-color : #5858e6;
+    --moon-color : #f1c40f;
+    --sun-color : #f39c12;
+    --black : black;
+    --temp-bg-color : #fffafa;
 }

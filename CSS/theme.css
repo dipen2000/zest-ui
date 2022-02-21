@@ -1,0 +1,26 @@
+@import "./colors.css";
+
+body{
+    --background-color : #fffafa;
+    --bg-color-for-containers :  #fffafa;
+    --home-page-desc-color : #242323;
+    --test-color: #663399;
+    --aside-heading-border-bottom-color : black;
+    --border-color : var(--dark-gray);
+    color : black;
+}
+
+body.dark{
+    --background-color :  #242323;
+    --bg-color-for-containers : #663399;
+    --border-color : #fffafa;
+    --home-page-desc-color : #dfdfdf;
+    --test-color: #b689e3;
+    --color-heading : #fffafa;
+    --aside-heading-border-bottom-color : #fffafa;
+    color : #fffafa;
+}
+
+body.dark .btn-main-home{
+    color :  #fffafa;
+}

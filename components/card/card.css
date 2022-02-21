@@ -1,32 +1,29 @@
 .card{
-    /* border : 3px solid red; */
     border-radius: 1rem;
     position: relative;
     width : 22rem;
-    background-color: var(--background-color);
+    background-color: var(--temp-bg-color);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.19), 0 0.6rem 0.6rem rgba(0,0,0,0.23);
 }
 
 .card-desc-product-info{
-    /* border : 3px solid red; */
     padding : 1rem;
 }
 
 .card-desc-product-name{
     padding-top : 0.5rem;
     color : var(--stone-500);
-    /* font-weight: bold; */
 }
 
 .card-desc-price-container{
-    padding : 0 10px 10px 10px;
+    padding : 0 1rem 1rem 1rem;
 }
 
 .card-reactions{
     display: flex;
     justify-content : flex-end;
     align-items : center;
-    padding :10px;
-    /* border : 3px solid red; */
+    padding :1rem;
 }
 
 .card-desc-brand{
@@ -40,59 +37,55 @@
 }
 
 .card-img{
-    height : 280px;
+    height : 28rem;
     width : 100%;
     position: relative;
-    /* border : 3px solid greenyellow; */
 }
 .product-img{
     width : 100%;
     height : 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .add-to-cart{
-    width : 25px;
-    height : 25px;
-    margin : 0 5px 0 5px;
+    width : 2.5rem;
+    height : 2.5rem;
+    margin : 0 0.5rem 0 0.5rem;
     cursor: pointer;
 }
 
 .share{
-    width : 20px;
-    height : 20px;
-    margin : 0 5px 0 5px;
+    width : 2rem;
+    height : 2rem;
+    margin : 0 0.5rem 0 0.5rem;
     cursor: pointer;
 }
 
 .wishlist{
     position: absolute;
-    top : 10px;
-    right : 10px;
-    width : 25px;
-    height : 25px;
-    /* border: 3px solid red; */
+    top : 1rem;
+    right : 1rem;
+    width : 2.5rem;
+    height : 2.5rem;
 }
 
 .wishlist svg{
     width : 100%;
     height : 100%;
     cursor: pointer;
-    
 }
 
 .wishlist svg:hover{
-    color : rgb(235, 48, 48);
+    color : var(--status-dnd);
 }
 
 .card-badge-container{
     position: absolute;
-    top : 10px;
+    top : 1rem;
     left : 0;
-    /* border : 3px solid red; */
-    background-color : rgb(88, 88, 230);
+    background-color : var(--card-badge-bg-color);
     width : 30%;
 }
 
@@ -113,11 +106,15 @@
     padding : 0.8rem;
 }
 
+.card-dismiss p{
+    color : var(--dark-gray);
+}
+
 .card-dismiss-btn{
     border : 0;
     outline : 0;
     padding : 0.5rem;
-    background-color: var(--background-color);
+    background-color: var(--temp-bg-color);
     cursor: pointer;
 }
 
@@ -140,6 +137,10 @@
     padding : 0.8rem;
 }
 
+.text-only-card p{
+    color : var(--dark-gray);
+}
+
 /********************************** horizontal card ********************/
 
 .horizontal-card-container{
@@ -160,5 +161,5 @@
 /********************************** card with shadow  *****************************/
 
 .card-with-shadow{
-    box-shadow: 5px 5px 8px var(--dark-gray);
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--dark-gray);
 }

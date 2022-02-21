@@ -1,17 +1,15 @@
 .alert{
-    border-radius: 15px;
+    border-radius: 1.5rem;
     font-weight: bold;
     margin : 1rem 0;
     font-family: var(--component-heading-font);
-    /* max-width: 25rem; */
     padding: 1rem;
-    /* border : 3px solid red; */
 }
 
 .alert-danger-solid{
     color : var(--status-dnd);
-    background-color : var(--light-status-dnd);
-    border : 3px solid var(--light-status-dnd);
+    background-color : var(--black);
+    border : 3px solid var(--black);
 }
 
 .alert-danger-outline{
