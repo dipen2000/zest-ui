@@ -98,7 +98,7 @@ main{
 }
 
 .divider{
-    border-bottom : 2px solid black;
+    border-bottom : 2px solid var(--aside-heading-border-bottom-color);
 }
 
 .aside-right{
@@ -128,7 +128,7 @@ main{
 .aside-list-container h3{
     font-size : 2.1rem;
     font-family: var(--nav-list-items-font);
-    border-bottom : 2px solid black;
+    border-bottom : 2px solid var(--aside-heading-border-bottom-color);
     padding : 0.8rem;
     margin-bottom : 0.8rem;
 }
@@ -193,6 +193,7 @@ main{
     display : flex;
     flex-direction: row;
     /* border : 3px solid red; */
+    align-items : center;
     gap : 1rem;
 }
 
@@ -234,7 +235,7 @@ main{
     height : 20rem;
     font-size : 2rem;
     padding : 1rem;
-    border : 3px solid var(--dark-gray);
+    border : 3px solid var(--border-color);
     display : flex;
     flex-direction: row;
     align-items: center;
@@ -275,21 +276,22 @@ main{
 
 .primary-solid{
     background-color : var(--primary-color);
-    color : var(--background-color);
+    color : var(--color-heading1);
 }
 
 .secondary-solid{
     background-color : var(--secondary-color);
+    color : var(--dark-gray);
 }
 
 .error-solid{
     background-color : var(--status-dnd);
-    color : var(--background-color);
+    color : var(--color-heading1);
 }
 
 .success-solid{
     background-color : var(--success-alert-color);
-    color : var(--background-color);
+    color : var(--color-heading1);
 }
 
 .only-code-section{
@@ -301,6 +303,47 @@ main{
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.fa-moon {color: var(--moon-color);}
+  
+.fa-sun {color: var(--sun-color);}
+  
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+
+.toggle-icon{
+      font-size : 1.8rem;
+  }
 
 /********************** media queries *******************************/
 @media screen and (max-width : 600px){
@@ -330,28 +373,3 @@ main{
     }
 }
 
-/* .footer-social-icon-container{
-    display : flex;
-    flex-direction: row;
-    gap : 1rem;
-} */
-
-/* .footer-icons{
-    color : var(--background-color);
-} */
-
-
-/* footer{
-    display: none;
-} */
-
-/* .footer-container{
-    display: flex;
-    flex-direction : column;
-    align-items : center;
-    justify-content : center;
-    width : 100%;
-    gap : 1.5rem;
-    background-color : var(--test-color);
-    padding : 0.8rem;
-} */

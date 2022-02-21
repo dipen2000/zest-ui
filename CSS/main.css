@@ -30,7 +30,7 @@ main{
     /* border : 3px solid red; */
     font-size : 2rem;
     font-family: var(--nav-list-items-font);
-    color : var(--dark-gray);
+    color : var(--home-page-desc-color);
 }
 
 .btn-section-home{
@@ -51,6 +51,7 @@ main{
     border-radius: 1rem;
     cursor : pointer;
     background-color: var(--light-test-color);
+    
 }
 
 .btn-primary-home{
@@ -61,6 +62,7 @@ main{
     display: flex;
     align-items: center;
     justify-content : center;
+    color : #fffafa;
 }
 
 .btn-flex-container{

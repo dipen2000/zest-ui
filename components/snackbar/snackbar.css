@@ -9,6 +9,10 @@
     background-color : var(--snackbar-background-color);
 }
 
+.snackbar p{
+    color : var(--temp-bg-color);
+}
+
 .snackbar-btn{
     color : var(--snackbar-btn-color);
     margin-left: auto;
@@ -34,6 +38,7 @@
     width : 100%;
     height : 100%;
     cursor : pointer;
+    color : var(--temp-bg-color);
 }
 
 .snackbar-reactions{

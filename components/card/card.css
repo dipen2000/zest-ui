@@ -3,7 +3,7 @@
     border-radius: 1rem;
     position: relative;
     width : 22rem;
-    background-color: var(--background-color);
+    background-color: var(--temp-bg-color);
 }
 
 .card-desc-product-info{
@@ -113,11 +113,15 @@
     padding : 0.8rem;
 }
 
+.card-dismiss p{
+    color : var(--dark-gray);
+}
+
 .card-dismiss-btn{
     border : 0;
     outline : 0;
     padding : 0.5rem;
-    background-color: var(--background-color);
+    background-color: var(--temp-bg-color);
     cursor: pointer;
 }
 
@@ -138,6 +142,10 @@
 .text-only-card{
     width : 40rem;
     padding : 0.8rem;
+}
+
+.text-only-card p{
+    color : var(--dark-gray);
 }
 
 /********************************** horizontal card ********************/

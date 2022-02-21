@@ -1,3 +1,5 @@
+@import "./colors.css";
+
 :root{
     --primary-color : #6366F1;
     --primary-hover : #4F46E5;
@@ -28,8 +30,33 @@
     --snackbar-btn-color : cyan;
     --snackbar-btn-color-hover : rgba(0, 255, 255, 0.13);
     --card-badge-bg-color : #5858e6;
-    --moon-color : #f1c40f;
-    --sun-color : #f39c12;
-    --black : black;
-    --temp-bg-color : #fffafa;
+    --color-heading1 : #fffafa;
+    
+}
+
+body{
+    --background-color : #fffafa;
+    /* --primary-color :  #6366F1; */
+    --bg-color-for-containers :  #fffafa;
+    --home-page-desc-color : #242323;
+    --test-color: #663399;
+    --aside-heading-border-bottom-color : black;
+    --border-color : var(--dark-gray);
+    color : black;
+}
+
+body.dark{
+    --background-color :  #242323;
+    /* --primary-color :  #4F46E5; */
+    --bg-color-for-containers : #663399;
+    --border-color : #fffafa;
+    --home-page-desc-color : #dfdfdf;
+    --test-color: #b689e3;
+    --color-heading : #fffafa;
+    --aside-heading-border-bottom-color : #fffafa;
+    color : #fffafa;
+}
+
+body.dark .btn-main-home{
+    color :  #fffafa;
 }
