@@ -91,7 +91,7 @@
 
 .card-badge{
     font-size: 1.6rem;
-    color : white;
+    color : var(--white);
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-align: center;

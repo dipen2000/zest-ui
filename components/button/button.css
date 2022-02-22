@@ -69,7 +69,7 @@
 
 .btn-secondary-outline:hover{
     color :  var(--background-color);
-    background-color : gray;
+    background-color : var(--gray);
 }
 
 .btn-success-outline{

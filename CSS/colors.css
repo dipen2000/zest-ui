@@ -32,4 +32,8 @@
     --sun-color : #f39c12;
     --black : black;
     --temp-bg-color : #fffafa;
+    --white : white;
+    --gray : gray;
+    --dark-mode-toggle-bg-color : #111;
+    --toggle-ball-color : #fff;
 }

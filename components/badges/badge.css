@@ -25,7 +25,7 @@
 .number-badge{
     height : 2.5rem;
     width : 2.5rem;
-    color : white;
+    color : var(--white);
     display : flex;
     align-items: center;
     justify-content : center;
