@@ -45,3 +45,10 @@ Documentation site : [ZEST UI](https://zestui.netlify.app/)
 ![ss-1](/assets/screen-shots/ss-1.png)
 ![ss-2](/assets/screen-shots/ss-2.png)
 ![ss-3](/assets/screen-shots/ss-3.png)
+
+---
+
+## 👨‍💻 Connect with me
+
+<a href="https://twitter.com/DipenChavda2"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/dipen-chavda-391087189/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
